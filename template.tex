@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% One Page Two Column Resume
+% LaTeX Template for CS Undergrads looking for Software Internships
+% Version 1.1 (30/4/2014)
+
+%Instructions
+
+% 1. Clone the repo.
+% 2. Upload the files to overleaf, or some other latex editor and modify the main.tex file to your liking.
+
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{\color{palette} First}{\color{subheadings} Last}{
+\href{mailto:johnsmith@university.edu}{johnsmith@university.edu} | 123-456-7890
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{______ University} %add \newline if the name of the university is too long
+\descript{B.S in Computer Science}
+\location{Expected June 2020} %expected completion date
+\location{ GPA: ___}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:\\ \href{https://github.com/____}{\custombold{github.com/_____}} \\
+LinkedIn: \href{https://www.linkedin.com/_____}{\custombold{_________}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Year 1}
+Course 1 \\
+Course 2 \\
+Course 3
+\sectionsep
+
+\subsection{Year 2}
+Course 1 \\
+Course 2 \\
+Course 3 \\
+Course 4
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages} % e.g Java, C++, C, etc.
+\textbullet{} Language 1  \\
+\textbullet{} Language 2\\
+\textbullet{} Language 3\\
+\textbullet{} Language 4\\
+\textbullet{} Language 5 \\
+\sectionsep
+\subsection{Frameworks/Libraries} %e.g Flask, React, Angular, etc.
+\textbullet{} Framework 1  \\
+\textbullet{} Framework 2 \\
+\textbullet{} Framework 3 \\
+\textbullet{} Framework 4 \\
+\sectionsep
+\subsection{Databases}  %e.g. Mongo, MySQL, GraphQL, etc.
+\textbullet{} Database 1 \\
+\textbullet{} Database 2
+
+
+\sectionsep
+
+\section{Awards/Honors}
+\textbullet{} Honor 1 \\
+\textbullet{} Honor 2\\
+\textbullet{} Honor 3\\
+
+\sectionsep
+
+\section{Societies}
+Club 1 \textbullet{} Club2 \textbullet{} Club3 \textbullet{} \\ Club4
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Company 1}
+\descript{| Position}
+\location{Jun 2017 – Sep 2017 | City}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Description of your role
+\item ____
+\item ____
+\item ____
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Company 2}
+\descript{| Position}
+\location{Jun 2017 – Sep 2017 | City}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Description of your role
+\item ____
+\item ____
+\item ____
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Project 1}
+\descript{ |  Role | Languages}
+\location{Jun 2017 – Present | City}
+\begin{tightemize}
+\item Description of what you did
+\item _______
+\item _______
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Project 2}
+\descript{ |  Role | Languages}
+\location{Jun 2017 – Present | City}
+\begin{tightemize}
+\item Description of what you did
+\item _______
+\item _______
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Project 3}
+\descript{ |  Role | Languages}
+\location{Jun 2017 – Present | City}
+\begin{tightemize}
+\item Description of what you did
+\item _______
+\item _______
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Project 1}
+\descript{ |  Role | Languages}
+\location{Jun 2017 – Present | City}
+\begin{tightemize}
+\item Description of what you did
+\item _______
+\item _______
+\end{tightemize}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
