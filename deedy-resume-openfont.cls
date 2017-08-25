@@ -19,11 +19,17 @@
 \usepackage{fontspec,xltxtra,xunicode}
 
 % Color definitions
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{date}{HTML}{666666}
+\definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
-\definecolor{palette}{HTML}{009973}
+\definecolor{palette}{HTML}{1a1aff}
+
+%replace the hex code in palette with the following if you would like to change the color theme.
+%green = 009973, 86b300
+%purple = 6666ff
+%red = b30000
+%blue = 1a1aff
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
@@ -36,7 +42,7 @@
 \setlength{\TPVertModule}{1mm}
 \textblockorigin{0mm}{5mm} % start everyth
 \newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
 Last Updated on
 \today
 \end{textblock}}
@@ -45,7 +51,7 @@ Last Updated on
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{40pt}{10cm}\selectfont #1
+		\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{35pt}{10cm}\selectfont #1
 		\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #2
 	} \\
 	\vspace{5pt}
