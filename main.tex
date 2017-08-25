@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% One Page Two Column Resume
+% LaTeX Template for CS Undergrads looking for Software Internships
+% Version 1.1 (30/4/2014)
+
+%Instructions
+
+% 1. Clone the repo.
+% 2. Upload the files to overleaf, or some other latex editor and modify the main.tex file to your liking.
+
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{\color{palette} Ashwin}{\color{subheadings} Vivek}{ 
+\href{mailto:ashwin9798@g.ucla.edu}{ashwinvivek@ucla.edu} | 323-989-7489
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of California, \newline Los Angeles}
+\descript{B.S in Computer Science}
+\location{Expected June 2020}
+\location{ GPA: 3.81}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:\\ \href{https://github.com/ashwin9798}{\custombold{github.com/ashwin9798}} \\
+LinkedIn: \href{https://www.linkedin.com/ashwin-vivekanandh-554518126}{\custombold{ashwin-vivekanandh-554518126}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Year 1}
+Data Structures and Algorithms \\
+Computer Organization \\
+Calculus of Several Variables
+\sectionsep
+
+\subsection{Year 2}
+Logic Design of Digital Systems \\
+Operating Systems \\
+Algorithms and Complexity \\
+Software Construction Laboratory \\
+Computer Graphics \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+\textbullet{} C++  \\
+\textbullet{} Swift \\ 
+\textbullet{} JavaScript \\ 
+\textbullet{} Golang \\ 
+\textbullet{} Python \\
+\sectionsep
+\subsection{Frameworks/Libraries}
+\textbullet{} Node.js, Express  \\
+\textbullet{} React.js, Redux \\ 
+\textbullet{} jQuery, HTML/CSS \\ 
+\textbullet{} Flask \\
+\sectionsep
+\subsection{Databases} 
+\textbullet{} MySQL \\
+\textbullet{} MongoDB
+
+
+\sectionsep
+
+\section{Awards/Honors}
+\textbullet{} HSSEAS Dean's Honor List \\ 
+\textbullet{} Best Hack at Hack on the Hill\\
+\textbullet{} Top 5 - Facebook Hacker Expo\\
+
+\sectionsep
+
+\section{Societies}
+ACM \textbullet{} Club Tennis \textbullet{} QuizBowl \textbullet{} \\ UCLA DevX
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Jardine One Solution}
+\descript{| Full Stack Engineering Intern - IoT}
+\location{Jun 2017 – Sep 2017 | Hong Kong}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Using Python, programmed a GPS system on a Raspberry Pi to track the path information of Hong Kong University buses.
+\item Built and deployed a RESTful Node.js server on top of a MySQL database to handle real-time GPS data feed from the Pi.
+\item Devised backend algorithms to make database queries by time more efficient.
+ \item Integrated multiple Google Maps APIs in an interactive front-end web app using jQuery, JavaScript, and HTML.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{UCLA DevX}
+\descript{| Senior Software Developer }
+\location{Apr 2017 – Present | Los Angeles, CA}
+\begin{tightemize}
+\item DevX is an innovative organization founded to bring technological solutions to common issues faced by Bruins at UCLA. 
+\item In Spring 2017, my team designed BruinScan: A class scanner for UCLA students to inform them when spots in classes become available.
+\item The app used Machine Learning to recommend classes based on preference, and optimize students' schedules.
+\item Worked with React.js, HTML/CSS on the frontend and Flask on the backend.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Gopher Trace}
+\descript{ |  Developer | Golang}
+\location{Jun 2017 – Present | Hong Kong}
+\begin{tightemize}
+\item Implemented a Ray Tracer in Go that renders items in a configurable world.
+\item Improved the overall performance of the program by configuring properties at runtime, using the Go flag package
+\item Rendered materials of different types, including Lambertians, metals, and dielectrics.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Jeo-parse-y!}
+\descript{| iOS Developer | Swift, Firebase, Alamofire}
+\location{Dec 2016 – Feb 2017| Los Angeles, CA}
+\begin{tightemize}
+\item Created a tool for aspiring contestants to prepare for Jeopardy! in a realistic way.
+\item Scraped J-Archive to provide real questions in the game board format.
+\item Integrated Apple Speech Framework to allow answering with voice.
+\item Implemented a real-time, multiplayer mode using Firebase.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Nector}
+\descript{| Honorable Mention at Facebook Hacker Expo | Swift}
+\location{Oct 2016 – Dec 2016| Los Angeles, CA}
+\begin{tightemize}
+\item Developed a real-time, social networking application in iOS that helps users within a modifiable radius break the ice with one word. Written in Swift.
+\item Integrated Apple CoreLocation to implement geo-fencing, and modify social radius.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Sherlock.ai}
+\descript{| iOS Developer | Swift}
+\location{Jan 2017 | Santa Barbara, CA}
+\begin{tightemize}
+\item Developed an intelligent recruitment assistant that matches users to companies using IBM Watson tone analysis.
+
+\end{tightemize}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
